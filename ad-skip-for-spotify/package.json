@@ -1,0 +1,11 @@
+{
+  "name": "ad-skip-for-spotify",
+  "version": "1.2.4",
+  "private": true,
+  "description": "A Windows Spotify desktop extension with a fixed two-second transition and a simple on/off switch.",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "npm run build && node tests/engine.cjs && node tests/ui.cjs && node tests/background.cjs"
+  },
+  "engines": { "node": ">=18" }
+}
