@@ -39,31 +39,7 @@ Run **Uninstall.cmd**, then restart Spotify using its normal shortcut. This disa
 
 To update or reapply after a Spotify update, run **Install.cmd** again. If setup fails, retain its error message; your Spotify version may require a newer Spicetify version.
 
-## Source and tests
 
-```text
-src/engine.js      Playback decisions and transitions
-src/ui.js          Settings switch and local persistence
-src/position.js    Dragging and position persistence
-ad-skip.js         Generated extension, ready to install
-Setup.ps1         Installer and uninstaller
-Launch.ps1        Background-aware Spotify launcher
-tests/            Mock playback and UI regression tests
-```
 
-Developers need Node.js 18 or later. There are no npm dependencies.
-
-```sh
-npm run build
-npm test
-```
-
-Edit files in `src/`, then rebuild `ad-skip.js`. Tests cover the two-second threshold, disabling automation, pause/advance/resume, settings persistence, and removal of the old timing control. Passing these tests does not guarantee compatibility with a particular Spotify release.
-
-## Privacy and compatibility
-
-The extension processes playback and queue information locally. It does not send analytics or upload this information. Settings are stored in Spotify's local storage. The installer contacts the official Spicetify release server; Spotify and Spicetify may make their own network requests.
-
-Spotify and Spicetify updates can break this extension. Mobile apps and Spotify Web are not supported by this package. This project is unofficial and is not affiliated with or endorsed by Spotify.
 
 Background flags: [Chromium launcher documentation](https://github.com/GoogleChrome/chrome-launcher/blob/main/docs/chrome-flags-for-tools.md).
