@@ -39,5 +39,6 @@ Standalone tracks pause without advancing. For playlists, albums, and Liked Song
 Run **Uninstall.cmd**, then restart Spotify using its normal shortcut. This disables only this extension; Spicetify, backups, and other extensions remain. The Ad Skip launcher shortcut remains available but is no longer needed.
 
 To update or reapply after a Spotify update, run **Install.cmd** again. If setup fails, retain its error message; your Spotify version may require a newer Spicetify version.
+<img width="3085" height="1858" alt="image" src="https://github.com/user-attachments/assets/db266c29-a085-4395-ae2d-8a184cc34850" />
 
 
